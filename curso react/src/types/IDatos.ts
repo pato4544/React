@@ -1,6 +1,8 @@
 export interface IDatos {
-    link: string
     nombre: string
     apellido: string
-    telefono: string
+    celular: string
+    imagen: string
+    edad: number
+    activo: boolean
 }

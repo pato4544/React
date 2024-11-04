@@ -1,19 +1,15 @@
 import React, { FC } from 'react'
+import { IDatos } from '../types/IDatos'
 
-export interface IDatos {
-    link: string
-    nombre: string
-    apellido: string
-    telefono: string
-}
-
-const Datos:FC<IDatos>  = ({apellido, nombre, telefono, link}) => {
+const Datos:FC<IDatos>  = ({nombre, apellido, celular, imagen, edad, activo}) => {
   return (
     <div>
-        <img src={link} alt={link} />
         <h1>{nombre}</h1>
         <h2>{apellido}</h2>
-        <h3>{telefono}</h3>
+        <h1>{celular}</h1>
+        <img src={imagen} alt={imagen} />
+        <h1>{edad}</h1>
+        <h1>{activo}</h1>
     </div>
   )
 }
